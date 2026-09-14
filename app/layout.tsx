@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
+// Everithing up to date
 export const viewport: Viewport = {
   themeColor: "#0a0e1a",
   colorScheme: "dark",
