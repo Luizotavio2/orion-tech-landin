@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="10" fill="#0a0e1a"/>
+  <defs>
+    <linearGradient id="moon" x1="10" y1="10" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5EC9F5"/>
+      <stop offset="100%" stop-color="#2E7DFF"/>
+    </linearGradient>
+    <mask id="crescent">
+      <rect width="48" height="48" fill="#000"/>
+      <circle cx="24" cy="22" r="12" fill="#fff"/>
+      <circle cx="28.5" cy="18.5" r="10.5" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="24" cy="22" r="12" fill="url(#moon)" mask="url(#crescent)"/>
+  <path d="M8 32C18 34 30 30 41 18" stroke="#5EC9F5" stroke-opacity="0.6" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="16" cy="37" r="1.4" fill="#C7D2E8"/>
+  <circle cx="24" cy="39" r="1.7" fill="#5EC9F5"/>
+  <circle cx="32" cy="41" r="1.4" fill="#C7D2E8"/>
+</svg>

@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-void-900 text-orion-silver antialiased;
+    background-image: var(--tw-gradient-orion, none);
+  }
+
+  ::selection {
+    @apply bg-orion-blue/40 text-white;
+  }
+
+  /* Slim, dark-native scrollbar so it doesn't fight the space theme */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #05070d;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1b2540;
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2e7dff;
+  }
+}
+
+@layer utilities {
+  /* Editorial hairline used to separate list items instead of card borders */
+  .hairline {
+    @apply border-t border-white/10;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-orion-cyan via-orion-blue to-orion-cyan;
+  }
+
+  .glass {
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/10;
+  }
+}
