@@ -5,7 +5,6 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
-import SocialProof from "@/components/sections/SocialProof";
 import FinalCta from "@/components/sections/FinalCta";
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
           <About />
           <Services />
           <Process />
-          <SocialProof />
           <FinalCta />
         </main>
 
