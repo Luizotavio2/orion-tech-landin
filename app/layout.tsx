@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Sora, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -58,9 +59,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
   return (
     <html lang="pt-BR" className={`${sora.variable} ${inter.variable}`}>
-      <body className="min-h-screen bg-void-900 font-body">{children}</body>
+      <body className="min-h-screen bg-void-900 font-body">
+        {children}
+        {gaId ? <GoogleAnalytics gaId={gaId} /> : null}
+      </body>
     </html>
   );
 }
